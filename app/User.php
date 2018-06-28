@@ -2,12 +2,15 @@
 
 namespace App;
 
+use TCG\Voyager\Traits\Translatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends \TCG\Voyager\Models\User
 {
     use Notifiable;
+    //use Translatable;
+
+   // protected $translatable = ['name']; // hangi alanın translate olmasını istiyorsak onu yazıyoruz
 
     /**
      * The attributes that are mass assignable.
