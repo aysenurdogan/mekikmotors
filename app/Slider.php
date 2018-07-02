@@ -5,9 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Translatable;
 
-class Product extends Model
+class Slider extends Model
 {
     use   Translatable;
-    protected $translatable = ['name', 'description', 'sort_description'];
-    
+    protected $translatable = ['slide_name', 'description'];
+
 }

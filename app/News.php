@@ -5,9 +5,9 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use TCG\Voyager\Traits\Translatable;
 
-class Product extends Model
+class News extends Model
 {
     use   Translatable;
-    protected $translatable = ['name', 'description', 'sort_description'];
+    protected $translatable = ['title', 'slug', 'content','filename'];
     
 }
